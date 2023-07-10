@@ -3,18 +3,18 @@ import React from "react";
 const { kakao } = window;
 
 const KakaoMapS = () => {
-  React.useEffect(() => {
-    const container = document.getElementById("map");
+  const $container = React.useRef(null);
 
+  React.useEffect(() => {
     const options = {
       center: new kakao.maps.LatLng(37.550966, 126.941048),
       level: 3,
     };
 
-    const map = new kakao.maps.Map(container, options);
+    const map = new kakao.maps.Map($container.current, options);
   }, []);
 
-  return <MapContainer id="map"></MapContainer>;
+  return <MapContainer ref={$container} id="map"></MapContainer>;
 };
 
 const MapContainer = styled.div`
