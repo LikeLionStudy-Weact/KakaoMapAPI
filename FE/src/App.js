@@ -1,4 +1,3 @@
-import Kakao from "./Kakao";
 import Router from "./Router";
 import KakaoMap from "./components/KakaoMap";
 import GlobalStyle from "./style/GlobalStyle";
@@ -9,7 +8,7 @@ function App() {
     <>
       <GlobalStyle />
       <Router />
-      <Kakao />
+      <KakaoMap />
     </>
   );
 }
