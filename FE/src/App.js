@@ -13,6 +13,9 @@ function App() {
       {/* <KakaoMapK /> */}
       <KakaoMapL />
       {/* <KakaoMapS /> */}
+      <KakaoMapK />
+      {/* <KakaoMapL />
+      <KakaoMapS /> */}
     </>
   );
 }
