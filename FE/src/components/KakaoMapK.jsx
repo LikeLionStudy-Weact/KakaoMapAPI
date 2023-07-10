@@ -2,7 +2,7 @@ import styled from "styled-components";
 import React from "react";
 const { kakao } = window;
 
-const Kakao = () => {
+const KakaoMapK = () => {
   React.useEffect(() => {
     const container = document.getElementById("map");
 
@@ -22,4 +22,4 @@ const MapContainer = styled.div`
   height: 500px;
 `;
 
-export default Kakao;
+export default KakaoMapK;
