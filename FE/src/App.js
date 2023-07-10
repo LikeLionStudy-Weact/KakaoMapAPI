@@ -10,6 +10,9 @@ function App() {
     <>
       <GlobalStyle />
       <Router />
+      {/* <KakaoMapK /> */}
+      <KakaoMapL />
+      {/* <KakaoMapS /> */}
       <KakaoMapK />
       {/* <KakaoMapL />
       <KakaoMapS /> */}

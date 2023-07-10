@@ -2,11 +2,21 @@ import styled from "styled-components";
 import React from "react";
 const { kakao } = window;
 
+<<<<<<< HEAD
+<<<<<<<< HEAD:FE/src/components/KakaoMapK.jsx
+const KakaoMapK = () => {
+========
+const KakaoMapL = () => {
+>>>>>>>> main:FE/src/components/KakaoMapL.jsx
+  React.useEffect(() => {
+    const container = document.getElementById("map");
+=======
 const KakaoMapL = () => {
   const mapRef = React.useRef(null);
 
   React.useEffect(() => {
     const container = mapRef.current;
+>>>>>>> main
 
     const options = {
       center: new kakao.maps.LatLng(37.550966, 126.941048),
@@ -14,6 +24,11 @@ const KakaoMapL = () => {
     };
 
     const map = new kakao.maps.Map(container, options);
+<<<<<<< HEAD
+  }, []);
+
+  return <MapContainer id="map"></MapContainer>;
+=======
 
     // 일반 지도와 스카이뷰로 지도 타입을 전환할 수 있는 지도타입 컨트롤을 생성합니다
     var mapTypeControl = new kakao.maps.MapTypeControl();
@@ -58,6 +73,7 @@ const KakaoMapL = () => {
   }, []);
 
   return <MapContainer ref={mapRef} />;
+>>>>>>> main
 };
 
 const MapContainer = styled.div`
@@ -65,4 +81,12 @@ const MapContainer = styled.div`
   height: 500px;
 `;
 
+<<<<<<< HEAD
+<<<<<<<< HEAD:FE/src/components/KakaoMapK.jsx
+export default KakaoMapK;
+========
 export default KakaoMapL;
+>>>>>>>> main:FE/src/components/KakaoMapL.jsx
+=======
+export default KakaoMapL;
+>>>>>>> main
